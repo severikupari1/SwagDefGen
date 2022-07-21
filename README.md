@@ -1,4 +1,4 @@
-# [SwagDefGen](https://roger13.github.io/SwagDefGen)
+# [SwagDefGen](https://severikupari1.github.io/SwagDefGen)
 This is a tool to help building Swagger documentations. It converts JSON request/response mocks to Swagger definitions.
 * Supports all swagger types
 * Detects int32 and int64 formats

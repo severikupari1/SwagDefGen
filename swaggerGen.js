@@ -175,9 +175,13 @@ function convert() {
   //For recursive functions to keep track of the tab spacing
   tabCount = 0; 
   indentator = "\n";
+
   // ---- Begin definitions ----
-  outSwagger = '"definitions": {';
+  outSwagger = `"${document.getElementById("schemaPropertyName").value.trim()}": {\n`;
   changeIndentation(1);
+  outSwagger += `   "type: object":\n`;
+  outSwagger += `   "properties:\n`;
+  changeIndentation(2);
   //For each object inside the JSON
   for (var obj in inJSON) {
     // ---- Begin schema scope ----
